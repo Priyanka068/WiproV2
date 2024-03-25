@@ -1,0 +1,37 @@
+***** CALCULATE FACTORIAL********
+
+PURPOSE : This function calculates the factorial of a non-negative integer.
+INPUT n : A non- negative integer for which factioral needs to be calculated.
+OUTPUT : The factorial of the input number n.
+
+*******PSEUDOCODE FOR FACTORIAL*******
+
+function factorial(n):
+if n == 0 or n == 1:
+    return 1
+else 
+    return n* factorial(n-1)
+
+
+******GENERATE FIBONACCI SERIES*******
+
+PURPOSE : This function generatesthe fibonacci series up to a specified number of terms.
+INPUT n : The number of terms in the fibonacci series to generate.
+OUTPUT : The fibonacci seies up to the nth term.
+
+********PSEUDOCODE FOR FIBONACCI *****
+
+BEGIN
+int fibonacci(int n){
+    if(n == 0){
+        return 0;
+    }
+    else if(n == 1){
+        return 1;
+    }
+    else{
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+    }
+    End
+}

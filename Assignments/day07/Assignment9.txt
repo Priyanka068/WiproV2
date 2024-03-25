@@ -1,0 +1,45 @@
+//*Recursive function and efficiency Analysis-
+    write a recursive function pseudocode
+    and calculate the nth Fibonacci number and use Big O notation to analyze its efficiency.
+    compare this with an iterative approach and discuss the pros and cons in terms of space
+    time complexity.
+
+*****Pseudocode for a recursive function to cal the nth Fibonacci number******
+
+                    function fibonacci(n):
+                    if n<= 1:
+                    return n 
+                    else:
+                    return fibonacci(n-1) + fibonacci(n-2)
+
+==============================================================================================  
+
+* The time complexity of this recursive approach is O(2^n) because each recursive calculate
+  branches into two more recursive calls,resulting in an exponential growth in the number of 
+  function calls as n increases.
+
+* Let's compare this recursive approach with an iterative approach.
+
+*****pseudocode for an iterative approach****** 
+
+                    function fibonacci_iterative(n):
+                    if n<=1:
+                    return n 
+                    else:
+                    fib = [0,1]
+                    for i from 2 to n:
+                    fib[i] = fib[i-1] + fib[i-2]
+                    return fib[n]
+
+==============================================================================================
+
+* The time complexity of this iterative approach is O(n) because it iterate through the
+  sequence once to calculate each fibonacci number.
+* In terms of space complexity,the recursive approach has a higher space complexity due 
+  to the recursive function calls filling up the call stack,resulting in O(n) space
+  complexity.On the other hand,the iterative approach only requires storing the fibonacci 
+  sequence up to the nth number,resulting in O(n) space complexity as well.
+* In summary,the recursive approach has a worse time complexity(exponential) compared to the
+  iterative approach(linear),but they both have the same spacecomplexity. However,
+  the iterative approach is generally more efficient for calculating Fibonacci numbers
+  due to its lowe time complexity. 

@@ -1,0 +1,9 @@
+********pseudocode for square and cube*******
+
+STEP 1 : START
+STEP 2 : READ input from user as N 
+STEP 3 : INITIALISE output = 0
+STEP 4 : IF TRUE then output = N*N   //Even Number--> Square
+STEP 5 : ELSE output =N*N*N          //Odd Number--->Cube
+STEP 7 : PRINT output 
+STEP 8 : END

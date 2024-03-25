@@ -1,0 +1,28 @@
+/* Pseudocode and create a flowchart for a bubble sort algorith.
+Provide a brief explanation and a simple array of integers to 
+demonstrate a dry run of your algorith*/
+
+*****Pseudocode**********
+
+procedure bubbleSort(A:list of sortable items)
+n:=length(A)
+repeat
+swapped:=false
+for i:=1 to n-1 inclusive do 
+if A[i-1]>A[i] then
+swap(A[i-1],A[i])
+swapped:=true
+end if
+end for 
+n:=n-1
+until not swappedend procedure
+
+
+*****Brief explanation of how the algorith work*****
+
+* It iterates through the array repeatedly, comparing adjacent 
+  elements and swapping them if they are in the wrong order.
+
+* The algorithms continues iterating until no more swaps are needed
+  indicating that the array is sorted.
+    
